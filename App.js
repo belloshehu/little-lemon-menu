@@ -50,7 +50,6 @@ export default function App() {
       const menu = jsonData.menu.map((item) => {
         return { ...item, category: item.category.title };
       });
-      console.log(menu);
       return menu;
     } catch (error) {
       Alert.alert(error);
